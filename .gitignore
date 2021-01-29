@@ -1,0 +1,14 @@
+.vs/
+.vscode/
+obj/
+bin/
+node_modules/
+dist/
+.[Ii]dea/
+
+[Xx]proj\.user
+[Pp]roject\.lock\.json
+[Pp]ackages/
+[Bb]ackup/
+*.user
+source/DigitalForge.Webapp.Meteo/DigitalForge.Webapp.Meteo/wwwroot/assets/

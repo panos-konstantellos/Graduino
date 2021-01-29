@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Arduino.OpenWeather": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
