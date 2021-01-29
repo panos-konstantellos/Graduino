@@ -1,0 +1,115 @@
+﻿// Copyright (c) 2021 Konstantellos Panagiotis, Zorbas Achileas. All rights reserved.
+// Licensed under the GNU General Public License v3.0 or later. See LICENSE.md in the project root for license information.
+
+@import (reference) '../../generic.less';
+@import (reference) '../../mixins.less';
+
+html { display: block; width: 100%; }
+body { display: block; width: 100%; }
+
+a.disabled { pointer-events: none; cursor: default; }
+
+@header-height: 64px;
+.site-loader { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; background: rgba(0,0,0,.8); 
+    &:after { content: ""; position: absolute; top: 50%; left: 50%; display: block; width: 200px; height: 200px; margin-left: -100px; margin-top: -100px; background: url('/images/loader.gif'); }
+}
+
+.header-wrapper { position: fixed; display: block; top: 0; left: 0; width: 100%; height: @header-height; box-shadow: 2px 2px rgba(0,0,0,0.2); .boxSized; z-index: 1; .clearfix; background: #fff;
+    .logo-wrapper { float: left; box-shadow: 1px 0px rgba(0,0,0,.2);
+        a { height: @header-height;
+            img { }
+        }
+    }
+
+    .menu-wrapper { float: right; display: block; height: 100%; background-color: @link-color-one; box-shadow: 2px 2px rgba(0,0,0,0.2); .clearfix;
+        .menu-item { position: relative; float: left; display: block; height: 100%; margin: 0 0.5em; color: #fff; 
+            a { display: table; height: 100%; padding: 0 1em; .boxSized; 
+                &:hover { background-color: darken(@link-color-one, 10); text-shadow: 0 0 .3px #fff, 0 0 .3px #fff; }
+                &.disabled { color: #666; }
+                span { display: table-cell; height: 100%; vertical-align: middle; }
+            }
+        }
+    }
+}
+
+.page-container { display: block; width: 100%; min-height: 100vh; padding-top: @header-height; box-sizing: border-box; background: rgba(0,0,0,.2);
+    &.homepage { height: 100vh; }
+
+    .center-container { display: block; height: 100%; max-width: 1280px; padding: 0.5em 0; margin: 0 auto; .boxSized; }
+
+    .title-container {
+        .title { font-size: 21px; font-weight: 700; line-height: 30px; }
+    }
+    .content-container {
+        .main-content { }
+    }
+
+    .map-wrapper, .mini-map { width: 100%; height: 100%; 
+        * { max-width: none; max-height: none; }
+        
+        .gm-style {
+            .gmnoprint, .gmnoscreen { display: none; }
+        
+            > div > a img { display: none; }
+        }
+
+        .infoWindow-wrapper { max-width: 480px; }
+
+        a { 
+            &:hover { color: @link-color-one; .transition(.2s); }
+        }
+        .link-info { font-weight: 700; }
+    }
+
+    &.devices {
+        
+        .section-wrapper { padding: 5px; .boxSized; }
+        .details-wrapper { .clearfix;
+            .details-map-wrapper { float: left; max-width: 13em; padding: 0.3em .6em; .boxSized; }
+            .details { float: left; max-width: calc(100% - 13em);
+                .details-block { float: left; display: block; }
+            }
+        }
+        
+    }
+    .details { padding: 0.3em .6em; .boxSized; line-height: 1.4em; .clearfix; text-align: center;
+        .details-block { display: inline-block; height: 3em; margin: .3em; padding: 0.1em 0.3em; border: 1px solid rgba(0,0,0,.1); .boxSized; line-height: 3em; background: rgba(0,0,0,0.1); }
+        .detail-title { font-weight: 700; }
+        .details-icon { margin: 0 .1em; font-size: 1.8em; font-weight: 700; color: #dd5347; }
+    }
+
+    .chart { display: block; width: 100%; max-width: 100%; }
+}
+
+@media screen and (max-width: 959px) {
+
+    .header-wrapper { 
+    
+        .menu-wrapper { 
+            .menu-item { font-size: 0.8em;
+                a { padding: 0 0.5em; }
+            }
+        }
+    }
+
+    .page-container { 
+        .map-wrapper, .mini-map { 
+            .infoWindow-wrapper { max-width: 280px; }
+        }
+        
+        &.devices {
+            .details-wrapper { 
+                .details-map-wrapper { float: none; max-width: 100%; 
+                    .mini-map { margin: 0 auto; }
+                }
+                .details { float: none; max-width: 100%;
+                    .details-block { float: none; display: inline-block; }
+                    
+                }
+            }
+        }
+        .details {
+            .detail-title { display: none; }
+        }
+    }
+}

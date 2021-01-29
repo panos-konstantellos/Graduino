@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalForge.Webapp.Meteo", "DigitalForge.Webapp.Meteo\DigitalForge.Webapp.Meteo.csproj", "{601BCEBA-2E09-4766-91B0-24E92F4377E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{601BCEBA-2E09-4766-91B0-24E92F4377E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{601BCEBA-2E09-4766-91B0-24E92F4377E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{601BCEBA-2E09-4766-91B0-24E92F4377E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{601BCEBA-2E09-4766-91B0-24E92F4377E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E85D501B-75A9-4F38-A5C3-6664CA34E0D8}
+	EndGlobalSection
+EndGlobal

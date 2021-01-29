@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Arduino.Listener": {
+      "commandName": "Project",
+      "commandLineArgs": "COM3 9600"
+    }
+  }
+}

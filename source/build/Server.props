@@ -1,0 +1,82 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <AspNetCoreVersion>3.1.9</AspNetCoreVersion>
+    <ExternalLibDirectory>$(MSBuildThisFileDirectory)</ExternalLibDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="Breeze.AspNetCore.NetCore" Version="0.1.2" />
+    <PackageReference Include="Breeze.Persistence.EFCore" Version="0.1.2" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.12" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.12" />
+    <PackageReference Include="Hangfire.MySql.Core" Version="2.2.5" />
+    <PackageReference Include="HangFire.SqlServer" Version="1.7.12" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Xml" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.NETCore.App" Version="2.2.8" />
+    <PackageReference Include="MySql.Data" Version="8.0.13" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NLog" Version="5.0.0-beta09" />
+    <PackageReference Include="NLog.Config" Version="4.5.0-alpha04" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.2" />
+    <PackageReference Include="StructureMap" Version="4.6.1" />
+    <PackageReference Include="StructureMap.Microsoft.DependencyInjection" Version="1.4.0" />
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DigitalForge.Sys.Base">
+      <HintPath>$(ExternalLibDirectory)\lib\DigitalForge.Sys.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalForge.Sys.Data">
+      <HintPath>$(ExternalLibDirectory)\lib\DigitalForge.Sys.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalForge.Sys.Data.Mssql">
+      <HintPath>$(ExternalLibDirectory)\lib\DigitalForge.Sys.Data.Mssql.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalForge.Sys.Data.Mysql">
+      <HintPath>$(ExternalLibDirectory)\lib\DigitalForge.Sys.Data.Mysql.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalForge.Sys.Host">
+      <HintPath>$(ExternalLibDirectory)\lib\DigitalForge.Sys.Host.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalForge.Sys.Http">
+      <HintPath>$(ExternalLibDirectory)\lib\DigitalForge.Sys.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalForge.Sys.Logger">
+      <HintPath>$(ExternalLibDirectory)\lib\DigitalForge.Sys.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalForge.Sys.ModuleManager">
+      <HintPath>$(ExternalLibDirectory)\lib\DigitalForge.Sys.ModuleManager.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalForge.Sys.Scheduler">
+      <HintPath>$(ExternalLibDirectory)\lib\DigitalForge.Sys.Scheduler.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
