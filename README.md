@@ -1,5 +1,6 @@
 # Graduino
 Graduino is a Bachelor's Degree final project for the Univercity of West Attica ( http://www.ice.uniwa.gr ).
+Live demo is available [here](https://meteo.devnt.gr/)
 
 Graduino consist of multiple projects
 - **`Arduino.Common.IO`**: Arduino Common IO for C#, a cross platform dotnet library to communicate with arduino devices via SerialPort
