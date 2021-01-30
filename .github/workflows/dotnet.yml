@@ -18,8 +18,12 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore source/Arduino.Common.IO/Arduino.Common.IO.Ports.sln
+      run: |
+        dotnet restore source/Arduino.Common.IO/Arduino.Common.IO.Ports.sln
+        dotnet restore source/DigitalForge.ApplicationServer.Meteo/DigitalForge.ApplicationServer.Meteo.sln
     - name: Build
-      run: dotnet build --no-restore source/Arduino.Common.IO/Arduino.Common.IO.Ports.sln
+      run: |
+        dotnet build --no-restore source/Arduino.Common.IO/Arduino.Common.IO.Ports.sln
+        dotnet build --no-restore source/DigitalForge.ApplicationServer.Meteo/DigitalForge.ApplicationServer.Meteo.sln
 #    - name: Test
 #      run: dotnet test --no-build --verbosity normal
