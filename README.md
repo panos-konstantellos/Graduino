@@ -1,5 +1,5 @@
 # Graduino
-Graduino is a Bachelor's Degree final project for the Univercity of West Attica ( http://www.ice.uniwa.gr ).
+Graduino is a Bachelor's Degree final project for the [Univercity of West Attica](http://www.ice.uniwa.gr).
 Live demo is available [here](https://meteo.devnt.gr/)
 
 ![.NET](https://github.com/ntellos13/Graduino/workflows/.NET/badge.svg)
