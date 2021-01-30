@@ -21,9 +21,11 @@ jobs:
       run: |
         dotnet restore source/Arduino.Common.IO/Arduino.Common.IO.Ports.sln
         dotnet restore source/DigitalForge.ApplicationServer.Meteo/DigitalForge.ApplicationServer.Meteo.sln
+        dotnet restore source/DigitalForge.Webapp.Meteo/DigitalForge.Webapp.Meteo.sln
     - name: Build
       run: |
         dotnet build --no-restore source/Arduino.Common.IO/Arduino.Common.IO.Ports.sln
         dotnet build --no-restore source/DigitalForge.ApplicationServer.Meteo/DigitalForge.ApplicationServer.Meteo.sln
+        dotnet build --no-restore source/DigitalForge.Webapp.Meteo/DigitalForge.Webapp.Meteo.sln
 #    - name: Test
 #      run: dotnet test --no-build --verbosity normal
