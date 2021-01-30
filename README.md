@@ -2,7 +2,7 @@
 Graduino is a Bachelor's Degree final project for the [Univercity of West Attica](http://www.ice.uniwa.gr).
 Live demo is available [here](https://meteo.devnt.gr/)
 
-![.NET](https://github.com/ntellos13/Graduino/workflows/.NET/badge.svg)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 Graduino consist of multiple projects
 - **`Arduino.Common.IO`**: Arduino Common IO for C#, a cross platform dotnet library to communicate with arduino devices via SerialPort
@@ -10,6 +10,9 @@ Graduino consist of multiple projects
 - **`DigitalForge.Webapp.Meteo`**: A simple frontend to display current weather data
 - **`DigitalForge.Arduino.Sketch`**: An arduino sketch to collect weather data from various sensors
 - **`Fritzing`**: Schematic and PCB for an arduino with various weather sensors attached.
+
+## Build Status
+![.NET](https://github.com/ntellos13/Graduino/workflows/.NET/badge.svg)
 
 ## Getting Started
 
